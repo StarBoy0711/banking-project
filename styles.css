@@ -23,7 +23,7 @@ body {
   height: 200%;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
-  background:whitesmoke;
+  /* background:whitesmoke; */
   display: flex;
   justify-content: center;
 }
