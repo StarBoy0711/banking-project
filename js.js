@@ -6,3 +6,13 @@ labels.forEach(label => {
     .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
     .join('')
 })  
+
+// async function basiclogin (email, password) {
+//     const response = await zlFetch.post(loginEndpoint, {
+//       auth: {
+//         username: email,
+//         password: password
+//       },
+//       body: { /.../ }
+//     })
+//   }
