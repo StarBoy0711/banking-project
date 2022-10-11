@@ -195,6 +195,11 @@ body {
   color: #fff;
   border-radius: 40px;
 }
+.social-item{
+
+  display:inline-block;
+  text-align:center;
+}
 .logo {
   width: 170px;
   height: 170px;
