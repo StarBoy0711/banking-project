@@ -31,7 +31,7 @@ body {
 
 .content_inner {
   /* height: 50%; */
-  /* overflow-y: hidden; */   
+  /* overflow-y: hidden;    */
   /* padding: 50px 20%; */
   display:inline-flex;
   flex-direction: column;
@@ -43,6 +43,7 @@ body {
   align-items: center;
   margin-bottom: 40px;
   border-bottom: 1px solid rgb(234, 65, 65);
+  
 }
 .card {
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
@@ -196,9 +197,10 @@ body {
   border-radius: 40px;
 }
 .social-item{
-
   display:inline-block;
   text-align:center;
+  box-sizing: border-box;
+  margin-left: 20px;
 }
 .logo {
   width: 170px;
