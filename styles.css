@@ -24,11 +24,9 @@ body {
   height: 200%;
   transform-origin: top left;
   transition: transform 0.7s cubic-bezier(1, 0.005, 0.24, 1);
-  /* background:whitesmoke; */
   display: flex;
   justify-content: center;
 }
-
 .content_inner {
   /* height: 50%; */
   /* overflow-y: hidden;    */
@@ -45,10 +43,8 @@ body {
   margin-bottom: 40px;
   border-bottom: 1px solid rgb(188, 8, 8);
   color: #d3dad7;
-  
 }
 .card {
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
   padding: 25px;
   /* height: 65%; */
   width: 69%;
@@ -74,13 +70,10 @@ body {
 .menu_toggle:active i {
   opacity: 0.8;
 }
-
 .menu_toggle i {
   color: #f0f0f0;
 }
-
-.menu_toggle .menu_open,
-.menu_toggle .menu_close {
+.menu_toggle .menu_open,.menu_toggle .menu_close {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,14 +118,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #a4a4a4;
+  color: #9de893;
   transition: color 0.2s;
 }
 
 .menu_items a i {
   width: 60px;
   height: 60px;
-  border-radius: 100%;
+  border-radius: 30%;
   border: 2px solid #f0f0f0;
   transition: border-color 0.2s;
 }
@@ -229,13 +222,7 @@ body {
   margin-left: 15px;
   transform: translate(-80px, 30px);
 }
-/* .developer {
-  text-align: center;
-}
-.para::before {
-  content: "W";
-  font-size: 40px;
-} */
+
 .page {
   display: none;
   transition: all 5s ease-in;
@@ -245,14 +232,13 @@ body {
   
 }
 
-a{
-  /* text-align: center; */
+.login a{
   text-decoration: none;
-  font-size: large;
+  font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
-
 }
+
 .card h2{
   text-align: center;
 }
