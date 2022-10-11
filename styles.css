@@ -16,7 +16,6 @@ body {
 .page {
   width: 100%;
   height: 100vh;
-  /* background: #896b5f; */
   background-image: url("bg-home.jpg");
   position: fixed;
 }
@@ -38,11 +37,13 @@ body {
   align-items: center;
 }
 .headd{
+  width: 70%;
   display:flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
-  border-bottom: 1px solid rgb(234, 65, 65);
+  border-bottom: 1px solid rgb(188, 8, 8);
+  color: #d3dad7;
   
 }
 .card {
@@ -239,4 +240,12 @@ body {
 }
 .social{
   margin-top: 20px;
+}
+
+a{
+  text-decoration: none;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #d3dad7;
+
 }
