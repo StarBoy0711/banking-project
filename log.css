@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 *{
   box-sizing: border-box;
@@ -6,7 +6,6 @@
   padding: 0;
 }
 body{
-  background-color: rgb(97, 25, 55);
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
@@ -17,7 +16,7 @@ body{
   overflow: hidden;
 }
 .container{
-  background-color: rgb(71, 6, 33);
+  background-color: rgb(119, 130, 212);
   padding: 20px 40px;
   border-radius: 5px;
 }
@@ -33,7 +32,7 @@ body{
   display: inline-block;
   width: 100%;
   cursor: pointer;
-  background-color: rgb(241, 97, 157);
+  background-color: rgb(97, 224, 241);
   padding: 15px;
   font-family: inherit;
   font-size: 16px;
@@ -84,9 +83,9 @@ body{
 .form-control input:valid + label span{
   color: rgb(241, 97, 157);
   transform: translateY(-30px);
-} */
+}
 
-
+/* 
 html {
   height: 100%;
   }
@@ -158,4 +157,4 @@ html {
   background-color: green;
   cursor: pointer;
   outline: none;
-  }
+  } */
