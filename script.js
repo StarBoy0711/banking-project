@@ -22,29 +22,29 @@ function showdiv() {
 
 let myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText);
 
-function sendMoney(){
-   var enterName = document.getElementById("#enterName").value;
-   var enterAmount = parseInt(document.getElementById("#enterAmount").value);
+// function sendMoney(){
+//    var enterName = document.getElementById("#enterName").value;
+//    var enterAmount = parseInt(document.getElementById("#enterAmount").value);
    
-   if (enterAmount > 8000) {
-      alert("Insufficient Balance.")
-   } else {
-      var findUserBankAccount = enterName + "BankBalance";
-      var finalAmount = parseInt(document.getElementById(findUserBankAccount).innerHTML) + enterAmount;
-      var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - enterAmount
-      document.getElementById("myAccountBalance").innerText = myAccountBalance
-      document.getElementById(findUserBankAccount).innerHTML = finalAmount;
-      alert(`Successful Transaction !!  
-      $${enterAmount} is sent to ${enterName}@email.com.`)
+//    if (enterAmount > 8000) {
+//       alert("Insufficient Balance.")
+//    } else {
+//       var findUserBankAccount = enterName + "BankBalance";
+//       var finalAmount = parseInt(document.getElementById(findUserBankAccount).innerHTML) + enterAmount;
+//       var myAccountBalance = parseInt(document.getElementById("myAccountBalance").innerText) - enterAmount
+//       document.getElementById("myAccountBalance").innerText = myAccountBalance
+//       document.getElementById(findUserBankAccount).innerHTML = finalAmount;
+//       alert(`Successful Transaction !!  
+//       $${enterAmount} is sent to ${enterName}@email.com.`)
 
-      // transaction history 
-      var createPTag = document.createElement("li");
-      var textNode = document.createTextNode(`$${enterAmount} is sent to recepient with Email-id ${enterName}@email.com on ${Date()}.`);
-      createPTag.appendChild(textNode);
-      var element = document.getElementById("transaction-history-body");
-      element.insertBefore(createPTag, element.firstChild);
-   }
-}
+//       // transaction history 
+//       var createPTag = document.createElement("li");
+//       var textNode = document.createTextNode(`$${enterAmount} is sent to recepient with Email-id ${enterName}@email.com on ${Date()}.`);
+//       createPTag.appendChild(textNode);
+//       var element = document.getElementById("transaction-history-body");
+//       element.insertBefore(createPTag, element.firstChild);
+//    }
+// }
 
 
 function money()
@@ -59,15 +59,14 @@ function money()
    else
    {
       let container = document.getElementById("transaction-history-body");
-      alert(`Successful Transaction !!  $${amount} is sent to ${username}@email.com.`);
       const text = document.createTextNode("Successfull transaction of $" + amount + " to " + username + "@email.com");
       container.appendChild(text);
       const lineBreak = document.createElement('br');
       container.appendChild(lineBreak);
       let amt = document.getElementById("numbername");
       amt.value = val - enterAmount;
+      var newBal = parseInt(document.getElementById(username).innerHTML) + enterAmount;
+      document.getElementById(username).innerHTML = newBal;
+      alert(`Successful Transaction !!  $${amount} is sent to ${username}@email.com.`);
    }
 }
-
-
-
