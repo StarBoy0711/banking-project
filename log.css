@@ -26,7 +26,7 @@ body{
 }
 .container a {
   text-decoration: none;
-  color: rgb(241, 97, 157);
+  color: rgb(97, 219, 241);
 }
 .btn{
   display: inline-block;
@@ -66,7 +66,7 @@ body{
 .form-control input:focus,
 .form-control input:valid{
   outline: 0;
-  border-bottom-color: rgb(241, 97, 157);
+  border-bottom-color: rgb(41, 237, 129);
 }
 .form-control label{
   position: absolute;

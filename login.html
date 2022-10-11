@@ -10,15 +10,15 @@
 
   <div class="container">
     <h1>Login</h1>
-    <form>
+    <form id="login-form">
       <div class="form-control">
-        <input type="text" placeholder="email" required>
-        <label>Email</label>
+        <input type="text" name="username" id="username-field" placeholder="Email" required>
       </div>
       <div class="form-control">
-        <input type="password" required placeholder="password">
+        <input type="password" name="password" id="password-field" required placeholder="Password">
       </div>
-      <button class="btn">Login</button>
+      <button class="btn" id="login-form-submit">Login</button>
+
       <p class="text">Don't have an account? <a href="#">Register</a></p>
     </form>
   </div>
