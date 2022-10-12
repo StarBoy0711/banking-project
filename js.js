@@ -5,7 +5,7 @@ BtnLog.addEventListener("click", (e) => {
     e.preventDefault();
     const username = formlog.username.value;
     const password = formlog.password.value;
-    if (username === "admin" && password === "itsourcecode") { 
+    if (username === "admin" && password === "devdarshan") { 
         alert("You have successfully logged in."); 
         document.location.href = "customers.html";
     } 
