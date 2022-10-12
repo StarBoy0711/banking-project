@@ -3,37 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login or sign up </title>
-    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="log.css"> 
 
 </head>
 <body>
-
-  <!-- <div class="container">
-    <h1>Login Form</h1>
-    <form>
+  <div class="container">
+    <h1>Login</h1>
+    <form id="login-form">
       <div class="form-control">
-        <input type="text" required>
-        <label>Email</label>
+        <input type="text" name="username" id="username-field" placeholder="Email" required>
       </div>
       <div class="form-control">
-        <input type="password" required>
-        <label>Password</label>
+        <input type="password" name="password" id="password-field" required placeholder="Password">
       </div>
-      <button class="btn">Login</button>
-      <p class="text">Don't have an account? <a href="#">Register</a></p>
+      <button class="btn" id="login-form-submit">Login</button>
     </form>
-  </div> -->
-
-  Login
-
-    <div id="login-error-msg-holder"> 
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p> 
-    </div> 
-    <form id="login-form"> 
-      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username"> 
-      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password"> 
-      <input type="submit" value="Login" id="login-form-submit"> 
-    </form>
+  </div>
 
   <script src="js.js"></script>
 </body>
