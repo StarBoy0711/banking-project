@@ -19,6 +19,6 @@ BtnLog.addEventListener("click", (e) => {
         document.location.href = "customers.html";
     } 
     else { 
-        ErrorMessage.style.opacity = 1; 
+        alert("Incorrect username or password.");
     }
 })
