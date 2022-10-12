@@ -15,6 +15,9 @@ function money()
    let amount = document.getElementById("enterAmount").value;
    let val = parseInt(document.getElementById("numbername").value);
    let enterAmount = parseInt(document.getElementById("enterAmount").value);
+   if (username != "Dev" && username != "Lakshya" &&username != "Darshan" &&username != "Shiv" &&username != "Manoj" &&username != "Nitin" &&username != "Ketan" &&username != "Kanwarraj" &&username != "Ankit" &&username != "Rahul" ) {
+      alert("Account doesn't exist.");
+   }
    if (enterAmount > val) {
       alert("Insufficient Balance.");
    }
