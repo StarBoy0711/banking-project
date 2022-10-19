@@ -18,20 +18,22 @@ function money()
    if (username != "Dev" && username != "Lakshya" &&username != "Darshan" &&username != "Shiv" &&username != "Manoj" &&username != "Nitin" &&username != "Ketan" &&username != "Kanwarraj" &&username != "Ankit" &&username != "Rahul" ) {
       alert("Account doesn't exist.");
    }
-   if (enterAmount > val) {
-      alert("Insufficient Balance.");
-   }
-   else
-   {
-      let container = document.getElementById("transaction-history-body");
-      const text = document.createTextNode("Successfull transaction of $" + amount + " to " + username + "@email.com");
-      container.appendChild(text);
-      const lineBreak = document.createElement('br');
-      container.appendChild(lineBreak);
-      let amt = document.getElementById("numbername");
-      amt.value = val - enterAmount;
-      var newBal = parseInt(document.getElementById(username).innerHTML) + enterAmount;
-      document.getElementById(username).innerHTML = newBal;
-      alert(`Successful Transaction !!  $${amount} is sent to ${username}@email.com.`);
+   else{
+      if (enterAmount > val) {
+         alert("Insufficient Balance.");
+      }
+      else
+      {
+         let container = document.getElementById("transaction-history-body");
+         const text = document.createTextNode("Successfull transaction of $" + amount + " to " + username + "@email.com");
+         container.appendChild(text);
+         const lineBreak = document.createElement('br');
+         container.appendChild(lineBreak);
+         let amt = document.getElementById("numbername");
+         amt.value = val - enterAmount;
+         var newBal = parseInt(document.getElementById(username).innerHTML) + enterAmount;
+         document.getElementById(username).innerHTML = newBal;
+         alert(`Successful Transaction !!  $${amount} is sent to ${username}@email.com.`);
+      }
    }
 }

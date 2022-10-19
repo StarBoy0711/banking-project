@@ -78,3 +78,18 @@ body{
   color: rgb(241, 97, 157);
   transform: translateY(-30px);
 }
+
+.homeicon {
+  color: #E6E4E4;
+  font-size: 20px;
+  position: fixed;
+  top: 2%;
+  left: 20px;
+  padding: 5px 8px;
+  border-radius: 50%;
+}
+
+.homeicon:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
